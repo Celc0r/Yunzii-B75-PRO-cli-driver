@@ -39,6 +39,8 @@ Program automaticly finds your keyboard by VID PID, so should be working on all 
 
 For all wondering, why is there a "blank's" and skipping in function "set_perkey" by switch statement, some packets from original driver were like this, if data is gonna written to them -- nothing will happen, so i'm just skipping them and properly adjesting enum key map.
 
+"Testing perkey" is just funny thing, it randomly selects colors for all keys and print them out.
+
 <b> I'm too lazy to put it into OpenRGB GUI and if someone is going to do that, please give some credit, thank you. </b>
 
 Command to compile i use:
