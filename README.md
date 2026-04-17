@@ -1,24 +1,25 @@
 # Yunzii-B75-PRO-cli-driver
-Simple driver for keyboard YUNZII B75 PRO written in C++ for my needs
+Simple driver for keyboard YUNZII B75 PRO written in C++ with HIDAPI for my needs
 
 Currently available animations:
-1: Wave
-2: Riple
-3: Starlight
-4: Stream
-5: Shadow
-6: Mountain Wave
-7: Sine Wave
-8: Color Spring
-9: Snow Trace
-10: Flower Wave
-11: Kill Two Birds
-12: Circle Wave
-13: Colorful Cross
-14: Snow Fall
-15: Meteor
-16: Dynamic Breathing
-17: Spectrum Cycle
+- 1: Wave <br>
+- 2: Riple <br>
+- 3: Starlight <br>
+- 4: Stream <br>
+- 5: Shadow <br>
+- 6: Mountain Wave <br>
+- 7: Sine Wave <br>
+- 8: Color Spring <br>
+- 9: Snow Trace <br>
+- 10: Flower Wave <br>
+- 11: Kill Two Birds <br>
+- 12: Circle Wave <br>
+- 13: Colorful Cross <br>
+- 14: Snow Fall <br>
+- 15: Meteor <br>
+- 16: Dynamic Breathing <br>
+- 17: Spectrum Cycle <br>
+
 
 All colors available.
 
@@ -38,8 +39,8 @@ Program automaticly finds your keyboard by VID PID, so should be working on all 
 
 For all wondering, why is there a "blank's" and skipping in function "set_perkey" by switch statement, some packets from original driver were like this, if data is gonna written to them -- nothing will happen, so i'm just skipping them and properly adjesting enum key map.
 
-I'm too lazy to put it into OpenRGB GUI and if someone is going to do that, please give some credit, thank you.
+<b> I'm too lazy to put it into OpenRGB GUI and if someone is going to do that, please give some credit, thank you. </b>
 
 Command to compile i use:
-g++ -o main main.cpp -lhidapi-hidraw
+``` g++ -o main main.cpp -lhidapi-hidraw ```
 
